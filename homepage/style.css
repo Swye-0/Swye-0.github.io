@@ -1,39 +1,82 @@
 * {
     font-family: 'JetBrains Mono';
-    color: white;
+    line-height: 1.5;
     padding: 0px;
     margin: 0px;
 }
 
 body {
-    background: linear-gradient(45deg,rgba(0, 0, 0, 1) 0%, rgba(80, 9, 121, 1) 50%, rgba(251, 0, 255, 1));
-	background-size: 200% 200%;
-	animation: gradient 10s ease infinite;
+    background: linear-gradient(45deg,rgb(0, 0, 0) 0%, rgb(80, 9, 121) 50%, rgb(251, 0, 255));
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
 	height: 200vh;
     margin: 0px;
 }
 
+.clear{clear:both;}
+
 #top_bar {
     width: 100%;
+    color: rgb(255, 255, 255);
     background-color: rgba(0,0,0,0.5);
     padding: 20px;
+}
+
+#block_1 {
+    width: 100%;
+    height: fit-content;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
 
 #facts {
     width: fit-content;
     height: fit-content;
     float: left;
-    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px;
 }
 
-#names {
+#facts:hover {
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#block_1_right {
     width: fit-content;
     height: fit-content;
     float: right;
-    border: 2px solid white;
+}
+
+#names {
+    width: fit-content;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#names:hover {
+    width: fit-content;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px;
@@ -42,11 +85,23 @@ body {
 #pronouns {
     width: fit-content;
     height: fit-content;
-    float: right;
-    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px 10px 10px auto;
+}
+
+#pronouns:hover {
+    width: fit-content;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 10px 10px auto;
 }
 
 @keyframes gradient {
