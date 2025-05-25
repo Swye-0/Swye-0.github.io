@@ -6,37 +6,42 @@
 }
 
 body {
-    background: linear-gradient(45deg,rgb(0, 0, 0) 0%, rgb(80, 9, 121) 50%, rgb(251, 0, 255));
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+    background-color: rgb(20, 20, 20);
 	height: 200vh;
+    padding: 0px;
     margin: 0px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
 }
 
 .clear{clear:both;}
 
 #top_bar {
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(238, 238, 238);
     background-color: rgba(0,0,0,0.5);
     padding: 20px;
 }
 
-#block_1 {
-    width: 100%;
+#block_1_left {
+    width: fit-content;
     height: fit-content;
-    clear: both;
-    padding: 0px;
-    margin: 0px;
+    float: left;
 }
 
 #facts {
     width: fit-content;
     height: fit-content;
     float: left;
-    color: rgb(255, 255, 255);
+    color: rgb(238, 238, 238);
     background-color: rgba(0,0,0,0.0);
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(238, 238, 238);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px;
@@ -46,12 +51,22 @@ body {
     width: fit-content;
     height: fit-content;
     float: left;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+    background-color: rgb(238, 238, 238);
     border: 2px solid transparent;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 10px;
+}
+
+#left_fact_column {
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+#right_fact_column {
+    float: right;
+    margin: 0px 0px 0px 10px;
 }
 
 #block_1_right {
@@ -63,10 +78,11 @@ body {
 #names {
     width: fit-content;
     height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(238, 238, 238);
     background-color: rgba(0,0,0,0.0);
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(238, 238, 238);
     border-radius: 10px;
+    float: right;
     padding: 10px 20px;
     margin: 10px;
 }
@@ -74,10 +90,11 @@ body {
 #names:hover {
     width: fit-content;
     height: fit-content;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+    background-color: rgb(238, 238, 238);
     border: 2px solid transparent;
     border-radius: 10px;
+    float: right;
     padding: 10px 20px;
     margin: 10px;
 }
@@ -85,33 +102,80 @@ body {
 #pronouns {
     width: fit-content;
     height: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(238, 238, 238);
     background-color: rgba(0,0,0,0.0);
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(238, 238, 238);
     border-radius: 10px;
+    float: right;
     padding: 10px 20px;
-    margin: 10px 10px 10px auto;
+    margin: 10px;
 }
 
 #pronouns:hover {
     width: fit-content;
     height: fit-content;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+    background-color: rgb(238, 238, 238);
     border: 2px solid transparent;
     border-radius: 10px;
+    float: right;
     padding: 10px 20px;
-    margin: 10px 10px 10px auto;
+    margin: 10px;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 100%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+#socials {
+    width: fit-content;
+    height: fit-content;
+    color: rgb(238, 238, 238);
+    background-color: rgba(0,0,0,0.0);
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    clear: both;
+    float: right;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#socials:hover {
+    width: fit-content;
+    height: fit-content;
+    color: rgb(20, 20, 20);
+    background-color: rgb(238, 238, 238);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    float: right;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#socials a:link {
+    color: rgb(208, 208, 255);
+}
+
+#socials a:visited {
+    color: rgb(238, 208, 255);
+}
+
+#socials a:hover {
+    color: rgb(238, 238, 238);
+}
+
+#socials a:active {
+    color: rgb(238, 238, 238);
+}
+
+#socials:hover a:link {
+    color: rgb(21, 21, 36);
+}
+
+#socials:hover a:visited {
+    color: rgb(28, 21, 36);
+}
+
+#socials:hover a:hover {
+    color: rgb(24, 24, 24);
+}
+
+#socials:hover a:active {
+    color: rgb(24, 24, 24);
 }
