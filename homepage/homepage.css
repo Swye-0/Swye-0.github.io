@@ -39,6 +39,14 @@ a {
     clear:both;
 }
 
+html {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
 #top_bar {
     width: auto;
     color: var(--text);
