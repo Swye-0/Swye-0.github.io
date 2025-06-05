@@ -6,19 +6,19 @@
 }
 
 :root {
-    --base: rgb(30, 30, 46);
-    --text: rgb(205, 214, 244);
-    --lavender: rgb(180, 190, 254);
-    --blue: rgb(137, 180, 250);
     --mauve: rgb(203, 166, 247);
     --red: rgb(243, 139, 168);
+    --lavender: rgb(180, 190, 254);
+    --blue: rgb(137, 180, 250);
+
+    --text: rgb(205, 214, 244);
+    --base: rgb(30, 30, 46);
+    --mantle: rgb(24, 24, 37);
 }
 
 body {
     background-color: var(--base);
 	height: 200vh;
-    padding: 0px;
-    margin: 0px;
 }
 
 ul {
@@ -50,11 +50,11 @@ html::-webkit-scrollbar {
 #top_bar {
     width: auto;
     color: var(--text);
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--mantle);
     padding: 10px 20px;
 }
 
-#website_name {
+#webpage_name {
     float: left;
 }
 
@@ -181,19 +181,19 @@ html::-webkit-scrollbar {
     margin: 10px;
 }
 
-#socials a:link {
+a:link {
     color: var(--blue);
 }
 
-#socials a:visited {
+a:visited {
     color: var(--mauve);
 }
 
-#socials a:hover {
+a:hover {
     color: var(--text);
 }
 
-#socials a:active {
+a:active {
     color: var(--text);
 }
 

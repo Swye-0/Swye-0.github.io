@@ -1,0 +1,71 @@
+* {
+    font-family: 'JetBrains Mono';
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --mauve: rgb(203, 166, 247);
+    --red: rgb(243, 139, 168);
+    --lavender: rgb(180, 190, 254);
+    --blue: rgb(137, 180, 250);
+    
+    --text: rgb(205, 214, 244);
+    --base: rgb(30, 30, 46);
+    --mantle: rgb(24, 24, 37);
+}
+
+body {
+    background-color: var(--base);
+	height: 200vh;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul li::before {
+    content: "-";
+    margin-right: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear{
+    clear:both;
+}
+
+html {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+#top_bar {
+    width: auto;
+    color: var(--text);
+    background-color: var(--mantle);
+    padding: 10px 20px;
+}
+
+#webpage_name {
+    float: left;
+}
+
+p {
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    color: var(--text);
+    background-color: transparent;
+    border: 2px solid var(--lavender);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+}
